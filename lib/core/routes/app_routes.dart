@@ -1,8 +1,9 @@
-
 import 'package:evently_app/core/routes/screens_route_name.dart';
 import 'package:flutter/material.dart';
 
+import '../../features/createEvent/create_new_event_view.dart';
 import '../../features/forget_password/forget_password.dart';
+import '../../features/layout/layout_view.dart';
 import '../../features/login/login_screen.dart';
 import '../../features/onboarding/screens/frist_onboarding_screen.dart';
 import '../../features/onboarding/screens/onboarding_scroll_screen.dart';
@@ -18,26 +19,40 @@ abstract class AppRoutes {
             builder: (context) => const SplashScreen(), settings: settings);
       case ScreenRouteName.onboardingScoll:
         return MaterialPageRoute(
-            builder: (context) => const OnboardingScrollScreen(), settings: settings);
-             case ScreenRouteName.profile:
+            builder: (context) => const OnboardingScrollScreen(),
+            settings: settings);
+      case ScreenRouteName.profile:
         return MaterialPageRoute(
             builder: (context) => const ProfileScreen(), settings: settings);
-             case ScreenRouteName.fristOnboardingScreen:
+      case ScreenRouteName.fristOnboardingScreen:
         return MaterialPageRoute(
-            builder: (context) => const FristOnboardingScreen(), settings: settings);
-            case ScreenRouteName.loginScreen:
+            builder: (context) => const FristOnboardingScreen(),
+            settings: settings);
+      case ScreenRouteName.loginScreen:
         return MaterialPageRoute(
             builder: (context) => const LoginScreen(), settings: settings);
-             case ScreenRouteName.signupScreen:
+      case ScreenRouteName.signupScreen:
         return MaterialPageRoute(
             builder: (context) => const SignupScreen(), settings: settings);
-              case ScreenRouteName.forgetPasswordScreen:
+      case ScreenRouteName.forgetPasswordScreen:
         return MaterialPageRoute(
-            builder: (context) => const ForgetPasswordScreen(), settings: settings);
-            
-            default :
-             return MaterialPageRoute(
-            builder: (context) => const SplashScreen(), settings: settings); 
+            builder: (context) => const ForgetPasswordScreen(),
+            settings: settings);
+      case ScreenRouteName.layout:
+        {
+          return MaterialPageRoute(
+            builder: (context) => const LayoutView(),
+            settings: settings,
+          );
+        }
+        case ScreenRouteName.createNewEvent:
+        return MaterialPageRoute(
+            builder: (context) => const CreateNewEventView(), settings: settings);
+      
+
+      default:
+        return MaterialPageRoute(
+            builder: (context) => const SplashScreen(), settings: settings);
     }
   }
 }

@@ -118,7 +118,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         EasyLoading.dismiss();
                         if (value) {
                           Navigator.pushNamedAndRemoveUntil(context,
-                              ScreenRouteName.profile, (route) => false);
+                              ScreenRouteName.layout, (route) => false);
                         }
                       });
                     }

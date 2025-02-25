@@ -4,7 +4,11 @@
     "english" : "English",
     "theme" : "النمط",
     "light" : "مضىء",
-    "dark" : "مظلم"
+    "dark" : "مظلم",
+    "home" : "الرئيسية",
+    "map" : "الخريطة",
+    "favorites" : "المفضلة",
+    "profile" : "حساب الشخصي"
     
 
 }

@@ -4,6 +4,10 @@
     "english" : "English",
     "theme" : "Theme",
     "light" : "Light",
-    "dark" : "Dark"
+    "dark" : "Dark",
+    "home" : "Home",
+    "map" : "Map",
+    "favorites" : "Favorites",
+    "profile" : "Profile"
 
 }

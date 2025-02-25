@@ -30,7 +30,7 @@ class _SplashPageState extends State<SplashScreen> {
       () {
         var isFristTime = LocalStorageService.getBool(LocalStorageKeys.isFristTimeRun)?? true;
         Navigator.pushReplacementNamed(context, isFristTime?  ScreenRouteName.fristOnboardingScreen :
-       ScreenRouteName.loginScreen);
+       ScreenRouteName.layout);
       },
     );
   }
